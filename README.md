@@ -1,2 +1,70 @@
 # GenericSeqMon
-Matlab project for automatically converting audio files to spike files using the Neuromorphic Auditory Sensor
+Matlab project for automatically converting audio files to spike files using the Neuromorphic Auditory Sensor.
+
+## Note
+This project has been tested in a x64 computer running Windows10.
+
+## Previous considerations
+If I clone this repository in the following path:
+
+`D:\dgutierrezATC\myrepos\GenericSeqMon\`
+
+Then I will have a folde architecture like:
+```
+...\myrepos
+       |
+       --GenericSeqMon
+               |
+               --.gitignore
+               --LICENSE
+               --README
+               --GenericSeqMon
+                      |
+                      --Dataset
+                         |
+                         --audio
+                             |
+                             -a
+                               |
+                               --1.wav
+                               --2.wav
+                             -b
+                               |
+                               --1.wav
+                               --2.wav
+                             -c
+                               |
+                               --1.wav
+                               --2.wav
+                         --events
+                      --host
+                         |
+                         --java
+                             |
+                             --dist
+                                 |
+                                 --...
+                             --jars
+                                 |
+                                 --...
+                      --startup.m
+                      --mainSoundDB
+                      --...
+```
+## Configuration steps
+Few previous configurations need to be done before running the code:
+
+1. If jAER software has been launched, please close it.
+2. In Matlab, write `edit libraryPath.txt`
+3. At the end of the file, please add `D:\dgutierrezATC\myrepos\GenericSeqMon\host\java\jars`
+4. Save the file close it.
+5. Close Matlab and open it again.
+
+Then, in mainSoundDB.m file, change both the source and destination directories.
+- `source = D:\dgutierrezATC\myrepos\GenericSeqMon\Dataset\audio`
+- `dest = D:\dgutierrezATC\myrepos\GenericSeqMon\Dataset\events`
+
+## Main steps
+
+1. Run startup.m
+2. Run mainSoundDB.m
