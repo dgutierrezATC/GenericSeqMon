@@ -1,3 +1,10 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Created by Angel Jimenez-Fernandez
+% Adapted by Juan Pedro Dominguez-Morales & Daniel Gutierrez-Galan
+% University of Seville 2020
+% Last modification: 17/nov/2020
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 function saveaerdat(ts,addr,filename)
 % function saveaerdat(train[,filename])
 % write events to a .dat file (tobi's aer data format).

@@ -4,6 +4,7 @@
 % University of Seville 2020
 % Last modification: 17/nov/2020
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 if (isempty(usb0))
     usb0=factory.getFirstAvailableInterface;
 end
@@ -40,4 +41,5 @@ for i = 1 : length(classes_folders)
         playAndRecord(y, Fs, strcat(strcat(dest_folder_name, '\', save_folder_name, '\', files_in_class(j).name)), usb0);
         %pause(0.25);
     end
+   
 end
