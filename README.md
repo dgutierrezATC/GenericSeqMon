@@ -60,7 +60,7 @@ Few previous configurations need to be done before running the code:
 4. Save the file close it.
 5. Close Matlab and open it again.
 
-**WARNING!: If you copy the Java libraries to another folder (eg. `C:\dgutierrezATC\Documents\MATLAB`) then you would need to change the absolute path in the file `startup.m`.**
+:warning:**WARNING!: If you copy the Java libraries to another folder (eg. `C:\dgutierrezATC\Documents\MATLAB`) then you would need to change the absolute path in the file `startup.m`.**
 
 Then, in mainSoundDB.m file, change both the source and destination directories.
 - `source = D:\dgutierrezATC\myrepos\GenericSeqMon\Dataset\audio`
